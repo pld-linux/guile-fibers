@@ -1,0 +1,14 @@
+--- fibers-1.1.1/fibers.texi.orig	2022-06-03 20:26:22.000000000 +0200
++++ fibers-1.1.1/fibers.texi	2022-12-14 06:03:42.631732082 +0100
+@@ -23,9 +23,9 @@ Invariant Sections, no Front-Cover Texts
+ @end quotation
+ @end copying
+ 
+-@dircategory The Algorithmic Language Scheme
++@dircategory Programming Languages:
+ @direntry
+-* Fibers: (fibers.info).  Lightweight concurrency for Guile.
++* Fibers: (fibers.info).		Lightweight concurrency for Guile
+ @end direntry
+ 
+ @titlepage
