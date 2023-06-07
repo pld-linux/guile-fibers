@@ -1,19 +1,19 @@
 Summary:	Lighweight concurrency for Guile
 Summary(pl.UTF-8):	Lekka współbieżność dla Guile
 Name:		guile-fibers
-Version:	1.1.1
+Version:	1.3.1
 Release:	1
 License:	LGPL v3+ (library), FDL v1.3+ (documentation)
 Group:		Libraries
 #Source0Download: https://github.com/wingo/fibers/releases
 Source0:	https://github.com/wingo/fibers/archive/v%{version}/fibers-%{version}.tar.gz
-# Source0-md5:	061d9f677f676142ad79a21c2cad9443
+# Source0-md5:	cbf8d4df07927dbd764bd0ef93bbf057
 Patch0:		fibers-info.patch
 URL:		https://github.com/wingo/fibers
-BuildRequires:	autoconf >= 2.52
+BuildRequires:	autoconf >= 2.69
 BuildRequires:	automake
 BuildRequires:	guile-devel >= 5:2.2
-BuildRequires:	libtool
+BuildRequires:	libtool >= 2:2
 BuildRequires:	texinfo
 Requires:	guile >= 5:2.2
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -61,7 +61,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc AUTHORS NEWS README.md TODO.md
-%attr(755,root,root) %{_libdir}/guile/*.*/extensions/epoll.so*
+%attr(755,root,root) %{_libdir}/guile/*.*/extensions/fibers-epoll.so*
 %{_libdir}/guile/*.*/site-ccache/fibers.go
 %{_libdir}/guile/*.*/site-ccache/fibers
 %dir %{_libdir}/guile/*.*/site-ccache/web
