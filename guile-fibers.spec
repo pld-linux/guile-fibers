@@ -30,7 +30,7 @@ języka Guile Scheme, utrzymaną w tradycji Concurrent ML.
 
 %prep
 %setup -q -n fibers-%{version}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 %{__libtoolize}
